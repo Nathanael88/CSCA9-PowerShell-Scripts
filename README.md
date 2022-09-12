@@ -1,7 +1,7 @@
 # CSCA9-PowerShell-Scripts
 Repository for PowerShell scripts 
 ## List of Scripts to complete
-- [ ] Enumerate expired user accounts
+- [X] Enumerate expired user accounts
 - [ ] Enumerate user accounts expired within last 24-hour period
 - [ ] Locate and unlock specific user account
 - [ ] Retrieve all locked accounts
