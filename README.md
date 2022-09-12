@@ -2,8 +2,8 @@
 Repository for PowerShell scripts 
 ## List of Scripts to complete
 - [X] Enumerate expired user accounts
-- [ ] Enumerate user accounts expired within last 24-hour period
-- [ ] Locate and unlock specific user account
+- [X] Enumerate user accounts expired within last 24-hour period
+- [X] Locate and unlock specific user account
 - [ ] Retrieve all locked accounts
 - [ ] Disable user accounts that have that have not been used to logon with in 30 or more days
 - [ ] Move disabled users into a specific OU
