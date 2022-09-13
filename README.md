@@ -7,7 +7,7 @@ Repository for PowerShell scripts
 - [X] Locate and unlock specific user account
 - [X] Retrieve all locked accounts
 - [X] Disable user accounts that have that have not been used to logon with in 30 or more days
-- [ ] Move disabled users into a specific OU
+- [X] Move disabled users into a specific OU
 - [ ] Remove Disabled Users from all Security Groups except Domain Users
 - [ ] Add Users into Groups
 - [ ] Create OUs
