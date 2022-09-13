@@ -17,4 +17,4 @@ Get-ADUser -f * -Properties LastLogonDate |
 where {$_.LastlogonDate -le $date.AddDays(-30)} |
 select name, ObjectGUID, Lastlogondate, enabled |
 Out-File -FilePath .\LastLogonDate_greater_than_30_days.txt
-Write-Host "Complete"
+Write-Host "#### Complete ####"
