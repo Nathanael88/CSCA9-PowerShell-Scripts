@@ -13,7 +13,7 @@ Repository for PowerShell scripts
 - [ ] Create OUs
 - [ ] Create Groups
 - [X] Create list of computers with a particular operating system installed
-- [ ] Create list of computers that have not logged onto the network within 30 days
+- [X] Create list of computers that have not logged onto the network within 30 days
 - [ ] Automatically remove items from Downloads folders 60+ days old
 - [ ] Create script to remote restart computer
 - [ ] Retrieve disk size and amount of free space on a remote host
