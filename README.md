@@ -14,7 +14,7 @@ Repository for PowerShell scripts
 - [ ] Create Groups
 - [X] Create list of computers with a particular operating system installed
 - [X] Create list of computers that have not logged onto the network within 30 days
-- [ ] Automatically remove items from Downloads folders 60+ days old
+- [X] Automatically remove items from Downloads folders 60+ days old
 - [ ] Create script to remote restart computer
 - [ ] Retrieve disk size and amount of free space on a remote host
 - [ ] Stop and start process on remote host
