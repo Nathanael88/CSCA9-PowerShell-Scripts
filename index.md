@@ -8,11 +8,11 @@
 - [X] Disable user accounts that have that have not been used to logon with in 30 or more days
 - [X] Move disabled users into a specific OU
 - [ ] Remove Disabled Users from all Security Groups except Domain Users
-- [ ] Add Users into Groups
+- [X] Add Users into Groups
 - [ ] Create OUs
 - [ ] Create Groups
-- [ ] Create list of computers with a particular operating system installed
-- [ ] Create list of computers that have not logged onto the network within 30 days
+- [X] Create list of computers with a particular operating system installed
+- [X] Create list of computers that have not logged onto the network within 30 days
 - [ ] Automatically remove items from Downloads folders 60+ days old
 - [ ] Create script to remote restart computer
 - [ ] Retrieve disk size and amount of free space on a remote host
