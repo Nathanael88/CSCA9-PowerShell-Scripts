@@ -1,12 +1,12 @@
 # Welcome to the CSCA9 PowerShell script repository
 ![Image of MSSA](https://www.armytimes.com/resizer//IJvDpEWnneU0mZadfiRawe_EE4c=/800x0/filters:quality(70)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/6BX5Y2J7DRAJTJHGZZHEN5C4KI.png)
 ## PowerShell scripts to complete
-- [ ] Enumerate expired user accounts
-- [ ] Enumerate user accounts expired within last 24-hour period
-- [ ] Locate and unlock specific user account
-- [ ] Retrieve all locked accounts
-- [ ] Disable user accounts that have that have not been used to logon with in 30 or more days
-- [ ] Move disabled users into a specific OU
+- [X] [Enumerate expired user accounts](Enumerate expired user accounts.ps1)
+- [X] Enumerate user accounts expired within last 24-hour period
+- [X] Locate and unlock specific user account
+- [X] Retrieve all locked accounts
+- [X] Disable user accounts that have that have not been used to logon with in 30 or more days
+- [X] Move disabled users into a specific OU
 - [ ] Remove Disabled Users from all Security Groups except Domain Users
 - [ ] Add Users into Groups
 - [ ] Create OUs
