@@ -8,7 +8,7 @@ Repository for PowerShell scripts
 - [X] Retrieve all locked accounts
 - [X] Disable user accounts that have that have not been used to logon with in 30 or more days
 - [X] Move disabled users into a specific OU
-- [ ] ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Remove Disabled Users from all Security Groups except Domain Users`
+- [ ] Remove Disabled Users from all Security Groups except Domain Users
 - [X] Add Users into Groups
 - [ ] Create OUs
 - [ ] Create Groups
