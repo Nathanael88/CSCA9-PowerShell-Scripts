@@ -42,11 +42,11 @@ foreach ($u in $CSV) {
     $password = ConvertTo-SecureString "Pa55w.rd" -AsPlainText -Force
 
     #Create User
-    New-ADUser  -Name "$($u.'GivenName') $($u.'Last Name')" `
+    New-ADUser  -Name "$($u.'GivenName') $($u.'SurName')" `
                 -GivenName $u.'GivenName' `
-                -UserPrincipalName $u.'UserPrincipleName' `
+                -UserPrincipalName $u.'UserPrinciplName' `
                 -SamAccountName $UserName `
-                -EmailAddress $u.'UserPrincipleName' `
+                -EmailAddress $u.'UserPrinciplName' `
                 -Surname $u.'Surname' `
                 -AccountPassword $password `
                 -Enabled $([System.Convert]::ToBoolean($u.Enabled))
