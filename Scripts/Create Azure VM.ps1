@@ -5,6 +5,7 @@
        Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
     
     #>
+    
 Install-Module -Name Az -Scope CurrentUser
 
 #Connect Azure account
@@ -41,3 +42,7 @@ $publicIp | Select-Object Name,IpAddress,@{label='FQDN';expression={$_.DnsSettin
 
 #Connect to newly created VM
 mstsc.exe /v <PUBLIC_IP_ADDRESS>
+
+
+
+#USE AZURE BLUEPRINTS OR TEMPLATES FOR OTHER CONFIGURATIONS
