@@ -1,0 +1,85 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_myVm1_name": {
+            "defaultValue": "myVm1",
+            "type": "String"
+        },
+        "disks_myVm1_OsDisk_1_9f3815f423784220a9d8c78b038d4961_externalid": {
+            "defaultValue": "/subscriptions/5c6c1a00-c832-4d99-8d83-302411cb63aa/resourceGroups/MYRESOURCEGROUP/providers/Microsoft.Compute/disks/myVm1_OsDisk_1_9f3815f423784220a9d8c78b038d4961",
+            "type": "String"
+        },
+        "networkInterfaces_myvm125_externalid": {
+            "defaultValue": "/subscriptions/5c6c1a00-c832-4d99-8d83-302411cb63aa/resourceGroups/myResourceGroup/providers/Microsoft.Network/networkInterfaces/myvm125",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2022-03-01",
+            "name": "[parameters('virtualMachines_myVm1_name')]",
+            "location": "eastus",
+            "tags": {
+                "Compute": "VM"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_DS1_v2"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "MicrosoftWindowsServer",
+                        "offer": "WindowsServer",
+                        "sku": "2016-datacenter-gensecond",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "osType": "Windows",
+                        "name": "[concat(parameters('virtualMachines_myVm1_name'), '_OsDisk_1_9f3815f423784220a9d8c78b038d4961')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "id": "[parameters('disks_myVm1_OsDisk_1_9f3815f423784220a9d8c78b038d4961_externalid')]"
+                        },
+                        "deleteOption": "Delete"
+                    },
+                    "dataDisks": []
+                },
+                "osProfile": {
+                    "computerName": "[parameters('virtualMachines_myVm1_name')]",
+                    "adminUsername": "Nath",
+                    "windowsConfiguration": {
+                        "provisionVMAgent": true,
+                        "enableAutomaticUpdates": true,
+                        "patchSettings": {
+                            "patchMode": "AutomaticByOS",
+                            "assessmentMode": "ImageDefault",
+                            "enableHotpatching": false
+                        }
+                    },
+                    "secrets": [],
+                    "allowExtensionOperations": true,
+                    "requireGuestProvisionSignal": true
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[parameters('networkInterfaces_myvm125_externalid')]",
+                            "properties": {
+                                "deleteOption": "Detach"
+                            }
+                        }
+                    ]
+                },
+                "diagnosticsProfile": {
+                    "bootDiagnostics": {
+                        "enabled": true
+                    }
+                }
+            }
+        }
+    ]
+}
