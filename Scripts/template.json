@@ -50,7 +50,7 @@
                 },
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_myVm1_name')]",
-                    "adminUsername": "Nath",
+                    "adminUsername": "Username",
                     "windowsConfiguration": {
                         "provisionVMAgent": true,
                         "enableAutomaticUpdates": true,
