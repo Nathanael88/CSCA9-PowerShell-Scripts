@@ -1,2 +1,2 @@
 #Replace XXX with the URLs for what sites you want to launch
-Start-Process -FilePath Chrome -ArgumentList 'XXX, XXX, XXX'
+'-new-window https://outlook.live.com/mail/inbox, https://unitedtraining.learnondemand.net/ClassEnrollment/3232245, https://www.skillpipe.com/?lang=en-GB#/bookshelf/books, https://www.linkedin.com/in/nathanael-pederson/, https://www.focalpointlearn.com/learn/course/mssa-csca9/20740-installation-storage-and-compute-with-windows-server-2016-week-1/week-1?client=mssa https://lms.godeploy.it/ https://docs.google.com/'
