@@ -1,0 +1,4 @@
+####Create A popup message on your computer####
+[System.Reflection.Assembly]::Loadwithpartialname('System.Windows.Forms')
+####Replace XXX with message and YYY with Popup name####
+[System.Windows.Forms.MessageBox]::('XXX','YYY')
