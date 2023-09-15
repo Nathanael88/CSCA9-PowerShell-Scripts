@@ -1,0 +1,5 @@
+Invoke-Command -ComputerName Example -Credential CredentalInfo -ScriptBlock {
+Get-WmiObject win32_processor; Get-WmiObject Win32_PhysicalMemory |
+Measure-Object -Property Capacity -Sum | select {$_.Sum/1GB}
+{ |
+Write-Host ******Script Complete******
